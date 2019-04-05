@@ -12,5 +12,5 @@ jobs:
           command: echo Hello, world.
 
       - run:
-          name: Print the Current Time
-          command: date
+          name: runcpp
+          command: g++ hightfive.cpp
