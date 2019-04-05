@@ -2,7 +2,15 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.6.5
+      - image: debian:stretch
+
     steps:
       - checkout
-      - run: run.py "A first hello"
+
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+
+      - run:
+          name: Print the Current Time
+          command: date
